@@ -25,7 +25,7 @@ document.querySelector(".button").addEventListener("click", (event) => {
     errorWindow.style.color = "red";
     errorWindow.innerHTML = resultObj.text;
   } else {
-    fraseOne.innerHTML = resultObj.frase1;
-    fraseTwo.innerHTML = resultObj.frase2;
+    fraseOne.innerHTML = resultObj.frase1 === undefined ? "" : resultObj.frase1;
+    fraseTwo.innerHTML = resultObj.frase2 === undefined ? "" : resultObj.frase2;
   }
 });

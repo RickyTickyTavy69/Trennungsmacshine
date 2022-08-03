@@ -11,10 +11,19 @@ export default class Devision {
 
   devide() {
     if (this.frase.split(" ").indexOf(this.devisionWord) !== -1) {
-      this.word = this.frase.slice(
-        this.frase.indexOf(this.devisionWord),
-        this.frase.indexOf(this.devisionWord) + this.devisionWord.length
-      );
+      if (
+        this.frase.split(" ").indexOf(this.devisionWord) === 0 ||
+        this.frase.split(" ").indexOf(this.devisionWord) ===
+          this.frase.split(" ").length - 1
+      ) {
+        this.word = "";
+      } else {
+        this.word = this.frase.slice(
+          this.frase.indexOf(this.devisionWord),
+          this.frase.indexOf(this.devisionWord) + this.devisionWord.length
+        );
+      }
+
       console.log(".............", this.word, this.frase);
     } else {
       return {
