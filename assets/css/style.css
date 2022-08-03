@@ -1,0 +1,30 @@
+/**************************************************General******************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 800px;
+  margin: 10vh auto;
+}
+
+/*********************************************machiene***********************************************/
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_element {
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+.ausgabe {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+}

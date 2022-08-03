@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <h1 class="form_element">Zeichenkettentrennungsmachiene</h1>
+      <form class="form_element form" action="Action! 2 for the price of one!">
+        <label class="form_element" for="zeichenkette"
+          >Zu trennende Zeichenkette</label
+        >
+        <input
+          name="frase"
+          class="form_element"
+          id="zeichenkette"
+          type="text"
+          placeholder="Bismarck biss Marck bis Marck Bismarck biss "
+        />
+        <label class="form_element" for="devidePosition"
+          >Zeichenkette für die Trennungsposition</label
+        >
+        <input
+          name="devisionWord"
+          class="form_element"
+          id="devidePosition"
+          type="text"
+          placeholder="bis"
+        />
+
+        <div class="form_element form_element_radio">
+          <label for="davor">Davor Trennen</label>
+          <input
+            class="form_element"
+            id="davor"
+            type="radio"
+            name="devideWhere"
+            value="davor"
+          />
+        </div>
+
+        <div class="form_element form_element_radio">
+          <label class="form_element" for="danach">Danach Trennen</label>
+          <input
+            class="form_element"
+            id="danach"
+            type="radio"
+            name="devideWhere"
+            value="danach"
+            checked
+          />
+        </div>
+
+        <button class="form_element button">Daten Absenden</button>
+      </form>
+
+      <h2>Ausgabe</h2>
+      <div class="ausgabe">
+        <div class="before">
+          <h3>vorderer Teil</h3>
+          <p class="beforeText"></p>
+        </div>
+        <div class="after">
+          <h3>hinterer Teil</h3>
+          <p class="afterText"></p>
+        </div>
+      </div>
+      <div class="error_window"></div>
+    </section>
+    <script type="module" src="./assets/scripts/script.js"></script>
+  </body>
+</html>
